@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cássio Alves Alencar Advogados Associados</title>
+
+<style>
+  :root {
+    --azul: #0c274f;
+    --dourado: #d4af37;
+    --zap: #25d366;
+    --email: #0072c6;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: var(--azul);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 30px 15px;
+    animation: fadeIn 0.9s ease-out;
+  }
+
+  header {
+    margin-bottom: 25px;
+  }
+
+  .logo {
+    width: 150px;
+    margin-bottom: 15px;
+    opacity: 0;
+    animation: zoomIn 1.2s forwards;
+  }
+
+  h1 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    animation: slideUp 0.8s ease-out;
+  }
+
+  .box {
+    background: rgba(255,255,255,0.12);
+    padding: 25px;
+    border-radius: 12px;
+    margin: 18px auto;
+    width: 100%;
+    max-width: 600px;
+    opacity: 0;
+    animation: fadeUp 1s ease-out forwards;
+  }
+
+  .box:nth-child(2){ animation-delay: .2s; }
+  .box:nth-child(3){ animation-delay: .4s; }
+  .box:nth-child(4){ animation-delay: .6s; }
+
+  .btn {
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 8px;
+    margin: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .3s;
+  }
+
+  .btn:hover {
+    transform: scale(1.07);
+    filter: brightness(1.2);
+  }
+
+  .footer {
+    margin-top: 30px;
+    font-size: 14px;
+    opacity: .6;
+    animation: fadeIn 1.4s ease-out;
+  }
+
+  /* ANIMAÇÕES */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  @keyframes zoomIn {
+    from { transform: scale(.2) rotate(-180deg); opacity: 0; }
+    to   { transform: scale(1) rotate(0); opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+  }
+
+  @keyframes fadeUp {
+    from { transform: translateY(15px); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+  }
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="simboloSemFundo.png" class="logo" alt="Logo">
+  <h1>Cássio Alves Alencar</h1>
+  <h2 style="
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: -10px;
+    letter-spacing: 1px;
+">Advogados Associados</h2>
+
+</header>
+
+<div class="box">
+  <h2>Cássio Luís Alves Alencar Bezerra</h2>
+  <p><strong>Advogado</strong></p>
+</div>
+
+<div class="box">
+  <h2>Contato / Endereço - Três Lagoas • MS</h2>
+  <a class="btn" style="background:var(--dourado);color:#000;"
+     href="https://share.google/u68v0wOiAnBMnD3X8" target="_blank">
+     📍 Ver Localização MS
+  </a>
+  <a class="btn" style="background:var(--zap);color:#fff;"
+     href="https://wa.me/5567992614346" target="_blank">
+     WhatsApp MS
+  </a>
+</div>
+
+<div class="box">
+  <h2>Contato / Endereço - Guarulhos • SP</h2>
+  <a class="btn" style="background:var(--dourado);color:#000;"
+     href="https://share.google/bwUo6DxGhuRJANBOD" target="_blank">
+     📍 Ver Localização SP
+  </a>
+  <a class="btn" style="background:var(--zap);color:#fff;"
+     href="https://wa.me/5511994829087" target="_blank">
+     WhatsApp SP
+  </a>
+</div>
+
+<a class="btn" style="background:var(--email);color:#fff;"
+   href="mailto:atendimento@cassioalvesalencar.adv.br">
+   ✉ E-mail
+</a>
+
+<div class="footer">
+  © 2025 Cássio Alves Alencar Advogados Associados
+</div>
+
+</body>
+</html>
